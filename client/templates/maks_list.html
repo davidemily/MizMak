@@ -1,0 +1,14 @@
+<template name="maksList">
+    <div class="maks">
+        <div class="form-style">
+            <div class="container">
+                <ul class="list=group">
+                    <h3>Live feed from Mizzou!</h3>
+                    {{#each maks}}
+                        {{> makItem}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>
