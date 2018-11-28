@@ -14,3 +14,9 @@ Template.makItem.events({
         var postId = Maks.findOne({_id:this._id});
     }
 });
+
+Template.makItem.helpers({
+    commentsCount: function() {
+        return Comments.find({ postId : this._id}).count();
+    }
+});

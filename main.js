@@ -1,5 +1,5 @@
 Maks = new Mongo.Collection('maks');
-MakComments = new Mongo.Collection('makscomments');
+Comments = new Mongo.Collection('comments');
 Router.route('/', {name: 'maksList'});
 
 Router.route('/submit', {name: 'maksSubmit'});
